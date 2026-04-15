@@ -28,7 +28,7 @@ function App() {
               it felt slightly bare and uninviting. I’ve got some simple tips to
               help you make any room feel complete.
             </p>
-            {!showpopup && (
+            {showpopup && (
               <div className="pop-up">
                 <p className="pop-share">SHARE</p>
                 <img src={facebook} alt="fb" />
@@ -53,10 +53,10 @@ function App() {
                   height={30}
                   width={30}
                   onMouseEnter={() => {
-                    setShowpopup(true);
+                    setShowpopup(!showpopup);
                   }}
                   onMouseLeave={() => {
-                    setShowpopup(false);
+                    setShowpopup(!showpopup);
                   }}
                 />
               </div>
