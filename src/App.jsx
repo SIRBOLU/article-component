@@ -53,10 +53,10 @@ function App() {
                   height={30}
                   width={30}
                   onMouseEnter={() => {
-                    setShowpopup(!showpopup);
+                    setShowpopup(true);
                   }}
                   onMouseLeave={() => {
-                    setShowpopup(!showpopup);
+                    setShowpopup(false);
                   }}
                 />
               </div>
